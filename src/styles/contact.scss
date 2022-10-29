@@ -1,0 +1,63 @@
+@import 'colors';
+
+.contact {
+    width: 100%;
+    background-color: $second;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > main {
+        height: 35rem;
+        width: 70%;
+        padding: 3rem;
+        border-radius: 0 200px 200px 0;
+        background-color: $first;
+
+        >form {
+            margin: 5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            >div {
+                height: 3rem;
+                display: flex;
+                align-content: center;
+                justify-content: center;
+                width: 60%;
+                margin: 0.5rem;
+
+                >label {
+                    font: 400 1.2rem $text1;
+                    width: 20%;
+                    margin: 1rem 1rem;
+                }
+                > input {
+                    align-self: stretch;
+                    width: 80%;
+                    padding: 1rem;
+                    border-radius: 5px;
+                    border: 1px solid rgba(123,123,123,0.3);
+                    outline: none;
+                }
+            }
+            > button {
+                margin: 3rem 0;
+                padding: 0.7rem;
+                border: none;
+                border-radius: 5px;
+                background-color: $third;
+                width: 200px;
+                font: 500 1rem $text1;
+                color: $first;
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+        }
+    }
+
+}
